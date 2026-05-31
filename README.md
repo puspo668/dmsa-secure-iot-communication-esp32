@@ -18,7 +18,7 @@ The project combines IoT hardware, sensor monitoring, and secure data communicat
 * IoT device integration
 * Sensor data processing
 
----
+
 
 ## Technologies Used
 
@@ -40,7 +40,7 @@ The project combines IoT hardware, sensor monitoring, and secure data communicat
 ├── receiver_app.py
 ```
 
----
+
 
 ## Files Description
 
