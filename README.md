@@ -32,6 +32,7 @@ The project combines IoT hardware, sensor monitoring, and secure data communicat
 
 ---
 
+
 ## Project Structure
 
 ```bash
@@ -60,13 +61,34 @@ Python receiver application used for receiving and processing transmitted data.
 
 ## Hardware Components
 
-* ESP32 Development Board
-* DHT11 Temperature & Humidity Sensor
-* Breadboard
-* Jumper Wires
-* USB Cable
+### ESP32 Microcontroller
 
----
+ESP32 is a low-power and high-performance microcontroller used as the main processing unit of the proposed system. It is responsible for collecting real-time sensor data from the DHT11 sensor and transmitting the data to the sender application through serial communication. ESP32 provides built-in Wi-Fi and efficient processing capability suitable for IoT-based secure communication systems.
+
+### DHT11 Temperature and Humidity Sensor
+
+The DHT11 sensor is used to measure real-time temperature and humidity values from the surrounding environment. The sensor transmits digital data to the ESP32 microcontroller through a single data pin. The collected sensor information is later encrypted using the proposed DMSA algorithm before transmission.
+
+### Breadboard
+
+A breadboard is used to create temporary hardware connections between ESP32 and DHT11 without soldering. It helps organize circuit connections and simplifies hardware testing and prototyping during the implementation process.
+
+### Jumper Wires
+
+Jumper wires are used to establish electrical connections between ESP32, DHT11 sensor, and the breadboard. Male-to-male jumper wires were used for stable circuit communication.
+
+### Hardware Connections
+
+The DHT11 sensor was connected to the ESP32 microcontroller using the following pin configuration:
+
+| Component  | ESP32 Pin Connection |
+| ---------- | -------------------- |
+| DHT11 VCC  | 3.3V                 |
+| DHT11 GND  | GND                  |
+| DHT11 DATA | GPIO 4               |
+
+The ESP32 was connected to the computer using a USB cable for power supply and serial communication with the sender application.
+
 
 ## Applications
 
